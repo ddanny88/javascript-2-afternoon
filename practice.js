@@ -14,7 +14,11 @@
   Then alert your name using dot notation.
 */
 
-//Code here
+let me ={
+  name: "Daniel",
+  age: 25
+}
+me.age;
 
 
 
@@ -25,7 +29,14 @@
   Have the values to those keys be your favorite thing in that category.
 */
 
-//Code here
+let favoriteThings ={
+  band: "Bring Me the Horizon",
+  food: "Tacos",
+  person: "God",
+  book: "Outwitting The Devil",
+  movie: "Scarface",
+  holiday: "Christmas"
+}
 
 
 
@@ -34,7 +45,8 @@
 */
 
 //Code here
-
+favoriteThings.car ="Celica";
+favoriteThings.brand ="Vans";
 
 
 /*
@@ -42,6 +54,8 @@
 */
 
 //Code here
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 
@@ -57,6 +71,10 @@
 
 //Code here
 
+let backPack = {};
+let item = "firstPocket";
+backPack[item] = "chapstick";
+backPack.color = "black";
 
 
 /*
@@ -67,6 +85,7 @@
 
 
 
+
 /*
 You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
@@ -74,7 +93,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +116,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -120,6 +140,8 @@ var user2 = {
 */
 
 //Code Here
+let methodCollection = {};
+
 
 
 
@@ -129,7 +151,13 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello = function(){
+  alert("hello");
+}
 
+methodCollection.logHello = function(){
+  console.log('hello');
+}
 
 
 /*
@@ -137,6 +165,8 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -148,6 +178,13 @@ var user2 = {
 */
 
 //Code Here
+function makePerson(name, birthday, ssn){
+  return {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+}
 
 
 
@@ -159,5 +196,12 @@ var user2 = {
 */
 
 //Code Here
+function makeCard (cardNumber, expirationDate, securityCode){
+  return {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+}
 
 
